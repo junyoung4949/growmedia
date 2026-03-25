@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROW MEDIA — Make it Grow. 성장의 모든 것</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<!-- NAV -->
+<header id="header">
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <span class="logo-box">GROW</span>
+            <span class="logo-media">MEDIA</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">서비스</a></li>
+            <li><a href="#work">포트폴리오</a></li>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#contact" class="nav-cta">문의하기</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="메뉴">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#services" class="mobile-link">서비스</a></li>
+        <li><a href="#work" class="mobile-link">포트폴리오</a></li>
+        <li><a href="#about" class="mobile-link">소개</a></li>
+        <li><a href="#contact" class="mobile-link">문의하기</a></li>
+    </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-up" data-aos-delay="0">
+            <span class="badge-dot"></span>
+            성장을 위한 마케팅 파트너
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Make it<br>
+            <em>Grow.</em>
+        </h1>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+            성장의 모든 것. GROW MEDIA는 브랜드의 진짜 성장을 만들어냅니다.<br>
+            데이터와 크리에이티브가 만나는 곳에서 새로운 가능성을 열어드립니다.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+            <a href="#contact" class="btn-primary">무료 상담 시작하기</a>
+            <a href="#work" class="btn-outline">포트폴리오 보기 <span class="arrow">→</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span>브랜드 전략</span><span>SNS 마케팅</span><span>퍼포먼스 광고</span>
+        <span>콘텐츠 제작</span><span>영상 제작</span><span>PR & 홍보</span>
+        <span>검색광고 SEO</span><span>인플루언서</span><span>데이터 분석</span>
+        <span>브랜드 전략</span><span>SNS 마케팅</span><span>퍼포먼스 광고</span>
+        <span>콘텐츠 제작</span><span>영상 제작</span><span>PR & 홍보</span>
+        <span>검색광고 SEO</span><span>인플루언서</span><span>데이터 분석</span>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-label">SERVICE</span>
+            <h2 class="section-title">성장을 만드는<br>전문 서비스</h2>
+            <p class="section-desc">마케팅의 모든 영역에서 최고의 성과를 만들어냅니다</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card featured" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-icon">🎯</div>
+                <h3>퍼포먼스 마케팅</h3>
+                <p>Meta, Google, 카카오 등 주요 플랫폼에서 데이터 기반의 광고 운영으로 최적의 ROAS를 달성합니다.</p>
+                <div class="service-tag">Most Popular</div>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">📱</div>
+                <h3>SNS 마케팅</h3>
+                <p>인스타그램, 유튜브, 틱톡 등 채널별 특성에 맞는 전략적 콘텐츠로 팔로워와 브랜드 인지도를 동시에 높입니다.</p>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="service-icon">🎬</div>
+                <h3>콘텐츠 & 영상 제작</h3>
+                <p>바이럴 숏폼부터 브랜드 필름까지, 타깃의 마음을 움직이는 크리에이티브 콘텐츠를 기획·제작합니다.</p>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">🏆</div>
+                <h3>브랜드 전략</h3>
+                <p>시장 분석과 소비자 인사이트를 기반으로 브랜드 포지셔닝과 핵심 메시지를 정립합니다.</p>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="service-icon">🔍</div>
+                <h3>SEO & 검색광고</h3>
+                <p>검색 상위 노출과 네이버·구글 키워드 광고로 구매 의향이 높은 잠재 고객을 정확하게 공략합니다.</p>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">📊</div>
+                <h3>데이터 분석 & 리포트</h3>
+                <p>광고 성과를 투명하게 리포팅하고, 데이터 인사이트 기반으로 지속적인 성과 개선을 이끕니다.</p>
+                <a href="#contact" class="service-link">자세히 보기 →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-row">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                <div class="stat-num" data-target="500">0<span>+</span></div>
+                <p>프로젝트 완료</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-num" data-target="98">0<span>%</span></div>
+                <p>고객 재계약률</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-num" data-target="200">0<span>+</span></div>
+                <p>파트너 클라이언트</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-num" data-target="8">0<span>년</span></div>
+                <p>업력</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+    <div class="container">
+        <div class="work-header" data-aos="fade-up">
+            <div>
+                <span class="section-label">PORTFOLIO</span>
+                <h2 class="section-title">성장을 증명한<br>프로젝트들</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" id="slidePrev" aria-label="이전">&#8592;</button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn" id="slideNext" aria-label="다음">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    <div class="slider-track-wrap">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">🛍️</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">브랜드 전략 · SNS</span>
+                    <h4>라이프스타일 브랜드<br>전면 리브랜딩</h4>
+                    <p class="work-result">팔로워 <strong>340%</strong> 증가</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">💄</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">퍼포먼스 광고</span>
+                    <h4>뷰티 신제품 론칭</h4>
+                    <p class="work-result">ROAS <strong>820%</strong> 달성</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">🍜</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">콘텐츠 · 영상</span>
+                    <h4>식음료 바이럴 캠페인</h4>
+                    <p class="work-result">조회수 <strong>1.2M</strong> 달성</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">💻</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">PR · 브랜드</span>
+                    <h4>IT 스타트업 브랜딩</h4>
+                    <p class="work-result">투자 유치 <strong>30억</strong> 성공</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">👗</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">인플루언서 · SNS</span>
+                    <h4>패션 브랜드 SNS</h4>
+                    <p class="work-result">매출 <strong>2.4배</strong> 성장</p>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="slide-thumb"><span class="slide-emoji">🏠</span></div>
+                <div class="slide-info">
+                    <span class="work-tag">디지털 마케팅</span>
+                    <h4>부동산 플랫폼 광고</h4>
+                    <p class="work-result">문의 전환율 <strong>3.8배</strong> 상승</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container about-inner">
+        <div class="about-text" data-aos="fade-right">
+            <span class="section-label">ABOUT</span>
+            <h2 class="section-title">GROW MEDIA는<br>다릅니다</h2>
+            <p>단순한 광고 집행이 아닌, 브랜드의 진짜 성장 파트너가 되겠습니다. 전략부터 크리에이티브, 성과 분석까지 일관된 관점으로 브랜드와 함께 성장합니다.</p>
+            <ul class="about-list">
+                <li><span class="check">✓</span> 데이터 기반의 투명한 성과 리포팅</li>
+                <li><span class="check">✓</span> 업종별 전문 마케터 팀 배정</li>
+                <li><span class="check">✓</span> 전략-제작-운영 원스톱 솔루션</li>
+                <li><span class="check">✓</span> 실시간 광고 모니터링 및 최적화</li>
+            </ul>
+            <a href="#contact" class="btn-primary">팀 소개 더 보기</a>
+        </div>
+        <div class="about-visual" data-aos="fade-left">
+            <div class="about-card">
+                <div class="about-logo-wrap">
+                    <span class="about-logo-box">GROW</span>
+                    <span class="about-logo-media">MEDIA</span>
+                </div>
+                <p class="about-tagline">Make it Grow.<br>성장의 모든 것</p>
+                <div class="about-contact">
+                    <div class="contact-row">
+                        <span class="contact-label">마케팅팀 팀장</span>
+                        <span>김 정 현 · Kim Jeong Hyeon</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-label">M.</span>
+                        <span>010.9935.5506</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-label">E.</span>
+                        <span>dollchef_@naver.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="contact-bg">
+        <div class="contact-orb"></div>
+    </div>
+    <div class="container">
+        <div class="contact-inner" data-aos="fade-up">
+            <span class="section-label light">CONTACT</span>
+            <h2 class="contact-title">성장할 준비가<br>되셨나요?</h2>
+            <p class="contact-desc">첫 상담은 무료입니다. 브랜드의 현재 상황을 알려주시면 맞춤 전략을 제안해 드립니다.</p>
+            <div class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="회사명 또는 브랜드명" class="form-input">
+                    <input type="text" placeholder="담당자 성함" class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="연락처" class="form-input">
+                    <input type="email" placeholder="이메일" class="form-input">
+                </div>
+                <textarea placeholder="문의 내용을 자유롭게 작성해 주세요." class="form-textarea"></textarea>
+                <button class="btn-submit" id="submitBtn">무료 상담 신청하기 →</button>
+            </div>
+            <div class="contact-info">
+                <a href="tel:010-9935-5506" class="info-item">📞 010.9935.5506</a>
+                <a href="mailto:dollchef_@naver.com" class="info-item">✉️ dollchef_@naver.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="nav-logo">
+                <span class="logo-box">GROW</span>
+                <span class="logo-media">MEDIA</span>
+            </a>
+            <p>Make it Grow. 성장의 모든 것</p>
+        </div>
+        <div class="footer-links">
+            <a href="#services">서비스</a>
+            <a href="#work">포트폴리오</a>
+            <a href="#about">소개</a>
+            <a href="#contact">문의</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="Blog">BL</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 GROW MEDIA. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../static/js/script.js" th:src="@{/js/script.js}"></script>
+</body>
+</html>
